@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-language="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apenas Diversão - Caça-níquel Virtual</title>
+    <meta name="description" content="Caça-níquel virtual temático de parque de diversões sem valor monetário">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slot-machine-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="main-title">
+                <span class="emoji">🎪</span>
+                <span class="title-text" data-pt="Apenas Diversão" data-en="Just Fun">Apenas Diversão</span>
+            </h1>
+            
+            <p class="subtitle" data-pt="Parque de diversões virtual" data-en="Virtual amusement park">
+                Parque de diversões virtual
+            </p>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn lang-pt active" data-lang="pt-BR" aria-label="Português">
+                    <span class="flag">🇧🇷</span>
+                </button>
+                <button class="lang-btn lang-en" data-lang="en-GB" aria-label="English">
+                    <span class="flag">🇬🇧</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Game Area -->
+        <main class="game-area">
+            <!-- Slot Machine -->
+            <div class="slot-machine" id="slotMachine">
+                <!-- Reels Container -->
+                <div class="reels-container">
+                    <!-- Reel 1 -->
+                    <div class="reel" id="reel1">
+                        <div class="reel-strip">
+                            <div class="symbol">🎪</div>
+                            <div class="symbol">🎡</div>
+                            <div class="symbol">🎢</div>
+                            <div class="symbol">🎠</div>
+                            <div class="symbol">🍭</div>
+                        </div>
+                    </div>
+
+                    <!-- Reel 2 -->
+                    <div class="reel" id="reel2">
+                        <div class="reel-strip">
+                            <div class="symbol">🎪</div>
+                            <div class="symbol">🎡</div>
+                            <div class="symbol">🎢</div>
+                            <div class="symbol">🎠</div>
+                            <div class="symbol">🍭</div>
+                        </div>
+                    </div>
+
+                    <!-- Reel 3 -->
+                    <div class="reel" id="reel3">
+                        <div class="reel-strip">
+                            <div class="symbol">🎪</div>
+                            <div class="symbol">🎡</div>
+                            <div class="symbol">🎢</div>
+                            <div class="symbol">🎠</div>
+                            <div class="symbol">🍭</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pay Line Indicator -->
+                <div class="payline"></div>
+            </div>
+
+            <!-- Control Panel -->
+            <div class="control-panel">
+                <!-- Spin Button -->
+                <button class="spin-button" id="spinButton" type="button">
+                    <span class="btn-text" data-pt="GIRAR" data-en="SPIN">GIRAR</span>
+                </button>
+
+                <!-- Credits Display -->
+                <div class="credits-display">
+                    <span class="credits-label" data-pt="Créditos:" data-en="Credits:">Créditos:</span>
+                    <span class="credits-value" id="creditsValue">100</span>
+                </div>
+
+                <!-- Bet Controls -->
+                <div class="bet-controls">
+                    <span class="bet-label" data-pt="Aposta:" data-en="Bet:">Aposta:</span>
+                    <button class="bet-button decrease" id="betDecrease" aria-label="Diminuir aposta">-</button>
+                    <span class="bet-value" id="betValue">1</span>
+                    <button class="bet-button increase" id="betIncrease" aria-label="Aumentar aposta">+</button>
+                </div>
+            </div>
+
+            <!-- Message Display -->
+            <div class="message-display" id="messageDisplay">
+                <p class="message active" data-type="welcome">
+                    <span data-pt="Bem-vindo! Pressione GIRAR para começar" 
+                          data-en="Welcome! Press SPIN to start">
+                        Bem-vindo! Pressione GIRAR para começar
+                    </span>
+                </p>
+                
+                <p class="message" data-type="spinning" style="display: none;">
+                    <span data-pt="Girando..." data-en="Spinning...">Girando...</span>
+                </p>
+                
+                <p class="message" data-type="win" style="display: none;">
+                    <span data-pt="Você ganhou!" data-en="You won!">Você ganhou!</span>
+                    <span class="win-amount">+<span id="winAmount">0</span></span>
+                </p>
+                
+                <p class="message" data-type="lose" style="display: none;">
+                    <span data-pt="Tente novamente!" data-en="Try again!">Tente novamente!</span>
+                </p>
+                
+                <p class="message" data-type="jackpot" style="display: none;">
+                    <span>🎉 JACKPOT! 🎉</span>
+                </p>
+                
+                <p class="message" data-type="no-credits" style="display: none;">
+                    <span data-pt="Sem créditos!" data-en="No credits!">Sem créditos!</span>
+                </p>
+            </div>
+
+            <!-- Game Info -->
+            <div class="game-info">
+                <button class="info-toggle" id="infoToggle">
+                    <span data-pt="ℹ️ Como Jogar" data-en="ℹ️ How to Play">ℹ️ Como Jogar</span>
+                </button>
+                
+                <div class="info-content" id="infoContent" style="display: none;">
+                    <div class="paytable">
+                        <h3 data-pt="Tabela de Pagamento" data-en="Paytable">Tabela de Pagamento</h3>
+                        <ul class="paytable-list">
+                            <li>
+                                <span data-pt="3 símbolos iguais = 10x aposta" 
+                                      data-en="3 matching symbols = 10x bet">3 símbolos iguais = 10x aposta</span>
+                            </li>
+                            <li>
+                                <span data-pt="2 símbolos iguais = 2x aposta" 
+                                      data-en="2 matching symbols = 2x bet">2 símbolos iguais = 2x aposta</span>
+                            </li>
+                            <li>
+                                <span class="special">🎪🎪🎪 </span>
+                                <span data-pt="= JACKPOT (50x)" data-en="= JACKPOT (50x)">= JACKPOT (50x)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="symbol-guide">
+                        <h3 data-pt="Símbolos do Jogo" data-en="Game Symbols">Símbolos do Jogo</h3>
+                        <div class="symbol-grid">
+                            <div class="symbol-item">
+                                <span class="symbol-icon">🎪</span>
+                                <span class="symbol-name" data-pt="Tenda" data-en="Tent">Tenda</span>
+                            </div>
+                            <div class="symbol-item">
+                                <span class="symbol-icon">🎡</span>
+                                <span class="symbol-name" data-pt="Roda-gigante" data-en="Ferris Wheel">Roda-gigante</span>
+                            </div>
+                            <div class="symbol-item">
+                                <span class="symbol-icon">🎢</span>
+                                <span class="symbol-name" data-pt="Montanha-russa" data-en="Roller Coaster">Montanha-russa</span>
+                            </div>
+                            <div class="symbol-item">
+                                <span class="symbol-icon">🎠</span>
+                                <span class="symbol-name" data-pt="Carrossel" data-en="Carousel">Carrossel</span>
+                            </div>
+                            <div class="symbol-item">
+                                <span class="symbol-icon">🍭</span>
+                                <span class="symbol-name" data-pt="Pirulito" data-en="Lollipop">Pirulito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="disclaimer">
+                <span data-pt="Jogo virtual sem valor monetário" data-en="Virtual game with no monetary value">
+                    Jogo virtual sem valor monetário
+                </span>
+                <br>
+                <span data-pt="Desenvolvido por Thiago Freitas" data-en="Developed by Thiago Freitas">
+                    Desenvolvido por Thiago Freitas
+                </span>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Sound Toggle -->
+    <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">
+        <span class="sound-on">🔊</span>
+        <span class="sound-off" style="display: none;">🔇</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
