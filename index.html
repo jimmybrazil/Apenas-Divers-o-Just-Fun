@@ -1,206 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-language="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apenas Diversão - Caça-níquel Virtual</title>
-    <meta name="description" content="Caça-níquel virtual temático de parque de diversões sem valor monetário">
+    <title>No Borders - Birthdays</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="slot-machine-container">
-        <!-- Header -->
-        <header class="header">
-            <h1 class="main-title">
-                <span class="emoji">🎪</span>
-                <span class="title-text" data-pt="Apenas Diversão" data-en="Just Fun">Apenas Diversão</span>
-            </h1>
-            
-            <p class="subtitle" data-pt="Parque de diversões virtual" data-en="Virtual amusement park">
-                Parque de diversões virtual
-            </p>
+    <header>
+        <h1>No Borders Rotaract e-Club</h1>
+        <h2>Birthday Management System</h2>
+    </header>
 
-            <!-- Language Selector -->
-            <div class="language-selector">
-                <button class="lang-btn lang-pt active" data-lang="pt-BR" aria-label="Português">
-                    <span class="flag">🇧🇷</span>
-                </button>
-                <button class="lang-btn lang-en" data-lang="en-GB" aria-label="English">
-                    <span class="flag">🇬🇧</span>
-                </button>
-            </div>
-        </header>
-
-        <!-- Main Game Area -->
-        <main class="game-area">
-            <!-- Slot Machine -->
-            <div class="slot-machine" id="slotMachine">
-                <!-- Reels Container -->
-                <div class="reels-container">
-                    <!-- Reel 1 -->
-                    <div class="reel" id="reel1">
-                        <div class="reel-strip">
-                            <div class="symbol">🎪</div>
-                            <div class="symbol">🎡</div>
-                            <div class="symbol">🎢</div>
-                            <div class="symbol">🎠</div>
-                            <div class="symbol">🍭</div>
-                        </div>
-                    </div>
-
-                    <!-- Reel 2 -->
-                    <div class="reel" id="reel2">
-                        <div class="reel-strip">
-                            <div class="symbol">🎪</div>
-                            <div class="symbol">🎡</div>
-                            <div class="symbol">🎢</div>
-                            <div class="symbol">🎠</div>
-                            <div class="symbol">🍭</div>
-                        </div>
-                    </div>
-
-                    <!-- Reel 3 -->
-                    <div class="reel" id="reel3">
-                        <div class="reel-strip">
-                            <div class="symbol">🎪</div>
-                            <div class="symbol">🎡</div>
-                            <div class="symbol">🎢</div>
-                            <div class="symbol">🎠</div>
-                            <div class="symbol">🍭</div>
-                        </div>
-                    </div>
+    <main>
+        <section id="registration-section">
+            <form id="registration-form">
+                <input type="text" id="full-name" name="full-name" required placeholder="Full Name">
+                
+                <div class="birthday-group">
+                    <input type="number" id="birth-day" name="day" min="1" max="31" 
+                           placeholder="Day" required aria-label="Birth day">
+                    <select id="birth-month" name="month" required aria-label="Birth month">
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
                 </div>
-
-                <!-- Pay Line Indicator -->
-                <div class="payline"></div>
-            </div>
-
-            <!-- Control Panel -->
-            <div class="control-panel">
-                <!-- Spin Button -->
-                <button class="spin-button" id="spinButton" type="button">
-                    <span class="btn-text" data-pt="GIRAR" data-en="SPIN">GIRAR</span>
-                </button>
-
-                <!-- Credits Display -->
-                <div class="credits-display">
-                    <span class="credits-label" data-pt="Créditos:" data-en="Credits:">Créditos:</span>
-                    <span class="credits-value" id="creditsValue">100</span>
-                </div>
-
-                <!-- Bet Controls -->
-                <div class="bet-controls">
-                    <span class="bet-label" data-pt="Aposta:" data-en="Bet:">Aposta:</span>
-                    <button class="bet-button decrease" id="betDecrease" aria-label="Diminuir aposta">-</button>
-                    <span class="bet-value" id="betValue">1</span>
-                    <button class="bet-button increase" id="betIncrease" aria-label="Aumentar aposta">+</button>
-                </div>
-            </div>
-
-            <!-- Message Display -->
-            <div class="message-display" id="messageDisplay">
-                <p class="message active" data-type="welcome">
-                    <span data-pt="Bem-vindo! Pressione GIRAR para começar" 
-                          data-en="Welcome! Press SPIN to start">
-                        Bem-vindo! Pressione GIRAR para começar
-                    </span>
-                </p>
                 
-                <p class="message" data-type="spinning" style="display: none;">
-                    <span data-pt="Girando..." data-en="Spinning...">Girando...</span>
-                </p>
-                
-                <p class="message" data-type="win" style="display: none;">
-                    <span data-pt="Você ganhou!" data-en="You won!">Você ganhou!</span>
-                    <span class="win-amount">+<span id="winAmount">0</span></span>
-                </p>
-                
-                <p class="message" data-type="lose" style="display: none;">
-                    <span data-pt="Tente novamente!" data-en="Try again!">Tente novamente!</span>
-                </p>
-                
-                <p class="message" data-type="jackpot" style="display: none;">
-                    <span>🎉 JACKPOT! 🎉</span>
-                </p>
-                
-                <p class="message" data-type="no-credits" style="display: none;">
-                    <span data-pt="Sem créditos!" data-en="No credits!">Sem créditos!</span>
-                </p>
-            </div>
+                <button type="submit">Save Member</button>
+            </form>
+        </section>
 
-            <!-- Game Info -->
-            <div class="game-info">
-                <button class="info-toggle" id="infoToggle">
-                    <span data-pt="ℹ️ Como Jogar" data-en="ℹ️ How to Play">ℹ️ Como Jogar</span>
-                </button>
-                
-                <div class="info-content" id="infoContent" style="display: none;">
-                    <div class="paytable">
-                        <h3 data-pt="Tabela de Pagamento" data-en="Paytable">Tabela de Pagamento</h3>
-                        <ul class="paytable-list">
-                            <li>
-                                <span data-pt="3 símbolos iguais = 10x aposta" 
-                                      data-en="3 matching symbols = 10x bet">3 símbolos iguais = 10x aposta</span>
-                            </li>
-                            <li>
-                                <span data-pt="2 símbolos iguais = 2x aposta" 
-                                      data-en="2 matching symbols = 2x bet">2 símbolos iguais = 2x aposta</span>
-                            </li>
-                            <li>
-                                <span class="special">🎪🎪🎪 </span>
-                                <span data-pt="= JACKPOT (50x)" data-en="= JACKPOT (50x)">= JACKPOT (50x)</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="symbol-guide">
-                        <h3 data-pt="Símbolos do Jogo" data-en="Game Symbols">Símbolos do Jogo</h3>
-                        <div class="symbol-grid">
-                            <div class="symbol-item">
-                                <span class="symbol-icon">🎪</span>
-                                <span class="symbol-name" data-pt="Tenda" data-en="Tent">Tenda</span>
-                            </div>
-                            <div class="symbol-item">
-                                <span class="symbol-icon">🎡</span>
-                                <span class="symbol-name" data-pt="Roda-gigante" data-en="Ferris Wheel">Roda-gigante</span>
-                            </div>
-                            <div class="symbol-item">
-                                <span class="symbol-icon">🎢</span>
-                                <span class="symbol-name" data-pt="Montanha-russa" data-en="Roller Coaster">Montanha-russa</span>
-                            </div>
-                            <div class="symbol-item">
-                                <span class="symbol-icon">🎠</span>
-                                <span class="symbol-name" data-pt="Carrossel" data-en="Carousel">Carrossel</span>
-                            </div>
-                            <div class="symbol-item">
-                                <span class="symbol-icon">🍭</span>
-                                <span class="symbol-name" data-pt="Pirulito" data-en="Lollipop">Pirulito</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+        <section id="members-section">
+            <table id="members-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Member Name</th>
+                        <th scope="col">Birth Date</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="members-list">
+                    <tr id="empty-state">
+                        <td colspan="3">No members registered</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p class="disclaimer">
-                <span data-pt="Jogo virtual sem valor monetário" data-en="Virtual game with no monetary value">
-                    Jogo virtual sem valor monetário
-                </span>
-                <br>
-                <span data-pt="Desenvolvido por Thiago Freitas" data-en="Developed by Thiago Freitas">
-                    Desenvolvido por Thiago Freitas
-                </span>
-            </p>
-        </footer>
-    </div>
-
-    <!-- Sound Toggle -->
-    <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">
-        <span class="sound-on">🔊</span>
-        <span class="sound-off" style="display: none;">🔇</span>
-    </button>
+    <footer>
+        <p>&copy; 2025 No Borders Rotaract e-Club</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
