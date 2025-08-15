@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr" class="no-js">
+<head>
+    <!-- Meta Tags Básicas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    
+    <!-- Título e Descrição -->
+    <title>Apenas Diversão - Caça-Níquel Virtual Mágico | Parque de Diversões Digital</title>
+    <meta name="description" content="Experimente a magia do Apenas Diversão! Um caça-níquel virtual temático de parque de diversões com visual infantil, cores pastéis vibrantes e muita diversão. Jogo sem valor monetário, apenas entretenimento puro!">
+    <meta name="keywords" content="caça-níquel virtual, jogo infantil, parque diversões, slot machine, apenas diversão, jogo grátis, entretenimento familiar">
+    <meta name="author" content="Thiago Freitas">
+    <meta name="creator" content="Thiago Freitas">
+    <meta name="publisher" content="Thiago Freitas">
+    <meta name="copyright" content="© 2025 Thiago Freitas. Todos os direitos reservados.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="General">
+    <meta name="distribution" content="global">
+    
+    <!-- Informações Geográficas -->
+    <meta name="geo.region" content="BR">
+    <meta name="geo.placename" content="Brasil">
+    <meta name="language" content="Portuguese">
+    <meta name="target" content="all">
+    <meta name="audience" content="all">
+    <meta name="coverage" content="Worldwide">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://apenasdiversao.com/">
+    <meta property="og:title" content="Apenas Diversão - Caça-Níquel Virtual Mágico">
+    <meta property="og:description" content="Um mundo mágico de diversão com caça-níquel virtual temático de parque de diversões. Cores pastéis vibrantes e muita alegria!">
+    <meta property="og:image" content="https://apenasdiversao.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Apenas Diversão - Caça-níquel Virtual">
+    <meta property="og:site_name" content="Apenas Diversão">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://apenasdiversao.com/">
+    <meta name="twitter:title" content="Apenas Diversão - Caça-níquel Virtual Mágico">
+    <meta name="twitter:description" content="Um mundo mágico de diversão com caça-níquel virtual temático de parque de diversões.">
+    <meta name="twitter:image" content="https://apenasdiversao.com/images/twitter-card.jpg">
+    <meta name="twitter:image:alt" content="Apenas Diversão - Caça-níquel Virtual">
+    <meta name="twitter:creator" content="@thiagofreitas">
+    <meta name="twitter:site" content="@apenasdiversao">
+    
+    <!-- Cores do Navegador -->
+    <meta name="theme-color" content="#FFB6E1">
+    <meta name="msapplication-navbutton-color" content="#FFB6E1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFB6E1">
+    <meta name="msapplication-TileColor" content="#FFB6E1">
+    
+    <!-- Apple Touch -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Apenas Diversão">
+    <meta name="apple-touch-fullscreen" content="yes">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#FFB6E1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://apenasdiversao.com/">
+    
+    <!-- Preconnect para Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Fontes Google - Coleção Completa -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Titan+One&family=Modak&family=Chicle&family=Luckiest+Guy&family=Fredoka:wght@300;400;500;600;700&family=Bubblegum+Sans&family=Shrikhand&family=Bungee&family=Bowlby+One&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload de Recursos Importantes -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Scripts de Detecção -->
+    <script>
+        // Remover classe no-js se JavaScript estiver habilitado
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+        
+        // Detectar tema do sistema
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark-theme-preferred');
+        }
+        
+        // Detectar preferência de movimento reduzido
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('reduced-motion');
+        }
+    </script>
+    
+    <!-- Schema.org / Dados Estruturados -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Apenas Diversão",
+        "alternateName": "Just Fun",
+        "description": "Caça-níquel virtual temático de parque de diversões com visual infantil e cores pastéis vibrantes",
+        "url": "https://apenasdiversao.com",
+        "applicationCategory": "Game",
+        "genre": "Casual Game",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Thiago Freitas",
+            "url": "https://thiagofreitas.work.gd"
+        },
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-01-01",
+        "inLanguage": ["pt-BR", "en"],
+        "isAccessibleForFree": true,
+        "isFamilyFriendly": true,
+        "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": "3"
+        }
+    }
+    </script>
+</head>
+
+<body class="game-body" data-theme="light" data-sound="enabled" data-animations="enabled">
+    <!-- Skip Links para Acessibilidade -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <a href="#game-controls" class="skip-link">Pular para controles do jogo</a>
+    
+    <!-- Container de Notificações -->
+    <div class="notifications-container" id="notificationsContainer" role="status" aria-live="polite" aria-atomic="true"></div>
+    
+    <!-- Container de Efeitos Especiais -->
+    <div class="special-effects-container" id="specialEffectsContainer" aria-hidden="true">
+        <!-- Partículas de fundo -->
+        <div class="background-particles" id="backgroundParticles"></div>
+        
+        <!-- Container de Confete -->
+        <div class="confetti-container" id="confettiContainer"></div>
+        
+        <!-- Container de Fogos de Artifício -->
+        <div class="fireworks-container" id="fireworksContainer"></div>
+        
+        <!-- Container de Bolhas -->
+        <div class="bubbles-container" id="bubblesContainer"></div>
+        
+        <!-- Container de Estrelas Cadentes -->
+        <div class="shooting-stars-container" id="shootingStarsContainer"></div>
+    </div>
+    
+    <!-- Painel de Idiomas Vertical -->
+    <nav class="language-panel" id="languagePanel" role="navigation" aria-label="Seletor de idiomas">
+        <h2 class="visually-hidden">Escolha o idioma</h2>
+        <ul class="language-list" role="list">
+            <li class="language-item">
+                <button class="lang-btn lang-pt active" 
+                        data-lang="pt-BR" 
+                        id="langBtnPt"
+                        aria-label="Mudar para Português" 
+                        aria-pressed="true"
+                        title="Português">
+                    <span class="flag" aria-hidden="true">🇧🇷</span>
+                    <span class="lang-label">PT-BR</span>
+                    <span class="lang-full visually-hidden">Português</span>
+                </button>
+            </li>
+            <li class="language-item">
+                <button class="lang-btn lang-en" 
+                        data-lang="en-GB" 
+                        id="langBtnEn"
+                        aria-label="Change to English" 
+                        aria-pressed="false"
+                        title="English">
+                    <span class="flag" aria-hidden="true">🇬🇧</span>
+                    <span class="lang-label">EN</span>
+                    <span class="lang-full visually-hidden">English</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Elementos Decorativos Flutuantes -->
+    <div class="floating-decorations" id="floatingDecorations" aria-hidden="true">
+        <!-- Algodão-doce -->
+        <div class="decoration cotton-candy" data-speed="slow" data-direction="left">
+            <span class="decoration-icon">🍭</span>
+            <span class="decoration-shadow"></span>
+        </div>
+        
+        <!-- Balão -->
+        <div class="decoration balloon" data-speed="medium" data-direction="right">
+            <span class="decoration-icon">🎈</span>
+            <span class="decoration-shadow"></span>
+        </div>
+        
+        <!-- Pipoca -->
+        <div class="decoration popcorn" data-speed="fast" data-direction="left">
+            <span class="decoration-icon">🍿</span>
+            <span class="decoration-shadow"></span>
+        </div>
+        
+        <!-- Sorvete -->
+        <div class="decoration ice-cream" data-speed="slow" data-direction="right">
+            <span class="decoration-icon">🍦</span>
+            <span class="decoration-shadow"></span>
+        </div>
+        
+        <!-- Estrela -->
+        <div class="decoration star" data-speed="medium" data-direction="center">
+            <span class="decoration-icon">⭐</span>
+            <span class="decoration-shadow"></span>
+        </div>
+        
+        <!-- Doce -->
+        <div class="decoration candy" data-speed="fast" data-direction="left">
+            <span class="decoration-icon">🍬</span>
+            <span class="decoration-shadow"></span>
+        </div>
+        
+        <!-- Cupcake -->
+        <div class="decoration cupcake" data-speed="slow" data-direction="right">
+            <span class="decoration-icon">🧁</span>
+            <span class="decoration-shadow"></span>
+        </div>
+        
+        <!-- Rosquinha -->
+        <div class="decoration donut" data-speed="medium" data-direction="left">
+            <span class="decoration-icon">🍩</span>
+            <span class="decoration-shadow"></span>
+        </div>
+    </div>
+    
+    <!-- Container Principal do Jogo -->
+    <div class="slot-machine-container" id="slotMachineContainer">
+        <!-- Header Principal -->
+        <header class="header main-header" id="mainHeader" role="banner">
+            <!-- Efeitos de Fundo do Header -->
+            <div class="header-background-effects" aria-hidden="true">
+                <div class="header-glow header-glow-1"></div>
+                <div class="header-glow header-glow-2"></div>
+                <div class="header-glow header-glow-3"></div>
+                <div class="header-sparkles">
+                    <span class="sparkle sparkle-1">✨</span>
+                    <span class="sparkle sparkle-2">✨</span>
+                    <span class="sparkle sparkle-3">✨</span>
+                    <span class="sparkle sparkle-4">✨</span>
+                    <span class="sparkle sparkle-5">✨</span>
+                </div>
+            </div>
+            
+            <!-- Decorações do Header -->
+            <div class="header-decorations" aria-hidden="true">
+                <div class="header-decoration left-decoration">
+                    <span class="decoration-item">🎪</span>
+                    <span class="decoration-item">🎠</span>
+                    <span class="decoration-item">🎡</span>
+                </div>
+                <div class="header-decoration right-decoration">
+                    <span class="decoration-item">🎢</span>
+                    <span class="decoration-item">🍭</span>
+                    <span class="decoration-item">🎈</span>
+                </div>
+            </div>
+            
+            <!-- Título Principal Super Estilizado -->
+            <h1 class="main-title super-magical-title" id="mainTitle">
+                <span class="title-line title-line-1">
+                    <span class="title-word word-1" data-text="APENAS">
+                        <span class="letter letter-1">A</span>
+                        <span class="letter letter-2">P</span>
+                        <span class="letter letter-3">E</span>
+                        <span class="letter letter-4">N</span>
+                        <span class="letter letter-5">A</span>
+                        <span class="letter letter-6">S</span>
+                    </span>
+                </span>
+                <span class="title-line title-line-2">
+                    <span class="title-word word-2" data-text="DIVERSÃO">
+                        <span class="letter letter-7">D</span>
+                        <span class="letter letter-8">I</span>
+                        <span class="letter letter-9">V</span>
+                        <span class="letter letter-10">E</span>
+                        <span class="letter letter-11">R</span>
+                        <span class="letter letter-12">S</span>
+                        <span class="letter letter-13">Ã</span>
+                        <span class="letter letter-14">O</span>
+                    </span>
+                </span>
+                <!-- Versão em Inglês (oculta por padrão) -->
+                <span class="title-english" style="display: none;">
+                    <span class="title-line title-line-1">
+                        <span class="title-word word-1" data-text="JUST">
+                            <span class="letter letter-1">J</span>
+                            <span class="letter letter-2">U</span>
+                            <span class="letter letter-3">S</span>
+                            <span class="letter letter-4">T</span>
+                        </span>
+                    </span>
+                    <span class="title-line title-line-2">
+                        <span class="title-word word-2" data-text="FUN">
+                            <span class="letter letter-5">F</span>
+                            <span class="letter letter-6">U</span>
+                            <span class="letter letter-7">N</span>
+                        </span>
+                    </span>
+                </span>
+            </h1>
+            
+            <!-- Subtítulo Mágico -->
+            <p class="subtitle magical-subtitle" id="subtitle">
+                <span class="sparkle sparkle-left">✨</span>
+                <span class="subtitle-text" id="subtitleText" data-pt="Parque de diversões virtual" data-en="Virtual amusement park">
+                    Parque de diversões virtual
+                </span>
+                <span class="sparkle sparkle-right">✨</span>
+            </p>
+            
+            <!-- Decoração Extra do Header -->
+            <div class="header-extra-decoration" aria-hidden="true">
+                <div class="rainbow-bar rainbow-bar-top"></div>
+                <div class="rainbow-bar rainbow-bar-bottom"></div>
+            </div>
+        </header>
+        
+        <!-- Área Principal do Jogo -->
+        <main class="game-area main-game-area" id="mainContent" role="main">
+            <!-- Decorações de Canto Animadas -->
+            <div class="corner-decorations" aria-hidden="true">
+                <div class="corner-decoration top-left">
+                    <span class="decoration-content">🍭</span>
+                    <span class="decoration-glow"></span>
+                </div>
+                <div class="corner-decoration top-right">
+                    <span class="decoration-content">🍿</span>
+                    <span class="decoration-glow"></span>
+                </div>
+                <div class="corner-decoration bottom-left">
+                    <span class="decoration-content">🎠</span>
+                    <span class="decoration-glow"></span>
+                </div>
+                <div class="corner-decoration bottom-right">
+                    <span class="decoration-content">🍦</span>
+                    <span class="decoration-glow"></span>
+                </div>
+            </div>
+            
+            <!-- Máquina Caça-Níquel -->
+            <section class="slot-machine" id="slotMachine" aria-label="Máquina caça-níquel">
+                <!-- Toldo Decorativo Superior -->
+                <div class="awning-decoration" aria-hidden="true">
+                    <div class="awning-top">
+                        <div class="awning-stripe awning-stripe-1"></div>
+                        <div class="awning-stripe awning-stripe-2"></div>
+                        <div class="awning-stripe awning-stripe-3"></div>
+                    </div>
+                    <div class="awning-fringe">
+                        <span class="fringe-item"></span>
+                        <span class="fringe-item"></span>
+                        <span class="fringe-item"></span>
+                        <span class="fringe-item"></span>
+                        <span class="fringe-item"></span>
+                        <span class="fringe-item"></span>
+                        <span class="fringe-item"></span>
+                        <span class="fringe-item"></span>
+                        <span class="fringe-item"></span>
+                        <span class="fringe-item"></span>
+                    </div>
+                </div>
+                
+                <!-- Container dos Rolos -->
+                <div class="reels-container" id="reelsContainer" role="region" aria-label="Rolos do caça-níquel">
+                    <!-- Rolo 1 -->
+                    <div class="reel reel-1" id="reel1" data-reel-index="0" role="img" aria-label="Rolo 1">
+                        <div class="reel-background"></div>
+                        <div class="reel-inner">
+                            <div class="reel-strip" id="reelStrip1">
+                                <div class="symbol symbol-1" data-symbol="ferris-wheel">
+                                    <span class="symbol-icon">🎡</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-2" data-symbol="roller-coaster">
+                                    <span class="symbol-icon">🎢</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-3" data-symbol="carousel">
+                                    <span class="symbol-icon">🎠</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-4" data-symbol="lollipop">
+                                    <span class="symbol-icon">🍭</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-5" data-symbol="popcorn">
+                                    <span class="symbol-icon">🍿</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <!-- Símbolos duplicados para animação contínua -->
+                                <div class="symbol symbol-6" data-symbol="ferris-wheel">
+                                    <span class="symbol-icon">🎡</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-7" data-symbol="roller-coaster">
+                                    <span class="symbol-icon">🎢</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-8" data-symbol="carousel">
+                                    <span class="symbol-icon">🎠</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reel-shadow-top"></div>
+                        <div class="reel-shadow-bottom"></div>
+                    </div>
+                    
+                    <!-- Rolo 2 -->
+                    <div class="reel reel-2" id="reel2" data-reel-index="1" role="img" aria-label="Rolo 2">
+                        <div class="reel-background"></div>
+                        <div class="reel-inner">
+                            <div class="reel-strip" id="reelStrip2">
+                                <div class="symbol symbol-1" data-symbol="ferris-wheel">
+                                    <span class="symbol-icon">🎡</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-2" data-symbol="roller-coaster">
+                                    <span class="symbol-icon">🎢</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-3" data-symbol="carousel">
+                                    <span class="symbol-icon">🎠</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-4" data-symbol="lollipop">
+                                    <span class="symbol-icon">🍭</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-5" data-symbol="popcorn">
+                                    <span class="symbol-icon">🍿</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <!-- Símbolos duplicados para animação contínua -->
+                                <div class="symbol symbol-6" data-symbol="ferris-wheel">
+                                    <span class="symbol-icon">🎡</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-7" data-symbol="roller-coaster">
+                                    <span class="symbol-icon">🎢</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-8" data-symbol="carousel">
+                                    <span class="symbol-icon">🎠</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reel-shadow-top"></div>
+                        <div class="reel-shadow-bottom"></div>
+                    </div>
+                    
+                    <!-- Rolo 3 -->
+                    <div class="reel reel-3" id="reel3" data-reel-index="2" role="img" aria-label="Rolo 3">
+                        <div class="reel-background"></div>
+                        <div class="reel-inner">
+                            <div class="reel-strip" id="reelStrip3">
+                                <div class="symbol symbol-1" data-symbol="ferris-wheel">
+                                    <span class="symbol-icon">🎡</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-2" data-symbol="roller-coaster">
+                                    <span class="symbol-icon">🎢</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-3" data-symbol="carousel">
+                                    <span class="symbol-icon">🎠</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-4" data-symbol="lollipop">
+                                    <span class="symbol-icon">🍭</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-5" data-symbol="popcorn">
+                                    <span class="symbol-icon">🍿</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <!-- Símbolos duplicados para animação contínua -->
+                                <div class="symbol symbol-6" data-symbol="ferris-wheel">
+                                    <span class="symbol-icon">🎡</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-7" data-symbol="roller-coaster">
+                                    <span class="symbol-icon">🎢</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                                <div class="symbol symbol-8" data-symbol="carousel">
+                                    <span class="symbol-icon">🎠</span>
+                                    <span class="symbol-glow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reel-shadow-top"></div>
+                        <div class="reel-shadow-bottom"></div>
+                    </div>
+                </div>
+                
+                <!-- Linha de Pagamento -->
+                <div class="payline-container" aria-hidden="true">
+                    <div class="payline payline-main">
+                        <div class="payline-glow"></div>
+                        <div class="payline-pulse"></div>
+                    </div>
+                    <div class="payline-decorations">
+                        <span class="payline-star payline-star-1">⭐</span>
+                        <span class="payline-star payline-star-2">⭐</span>
+                        <span class="payline-star payline-star-3">⭐</span>
+                    </div>
+                </div>
+                
+                <!-- Moldura Decorativa da Máquina -->
+                <div class="machine-frame" aria-hidden="true">
+                    <div class="frame-corner frame-corner-tl">
+                        <span class="corner-decoration">🌟</span>
+                    </div>
+                    <div class="frame-corner frame-corner-tr">
+                        <span class="corner-decoration">🌟</span>
+                    </div>
+                    <div class="frame-corner frame-corner-bl">
+                        <span class="corner-decoration">🌟</span>
+                    </div>
+                    <div class="frame-corner frame-corner-br">
+                        <span class="corner-decoration">🌟</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Painel de Controle -->
+            <section class="control-panel" id="gameControls" role="region" aria-label="Controles do jogo">
+                <!-- Container do Botão Girar -->
+                <div class="spin-button-container">
+                    <button class="spin-button magical-spin-button" 
+                            id="spinButton" 
+                            type="button"
+                            aria-label="Girar os rolos"
+                            aria-describedby="spinButtonDescription">
+                        <span class="button-background"></span>
+                        <span class="button-content">
+                            <span class="btn-text spin-text" id="spinText" data-pt="GIRAR" data-en="SPIN">GIRAR</span>
+                            <span class="button-sparkles" aria-hidden="true">
+                                <span class="sparkle">✨</span>
+                                <span class="sparkle">✨</span>
+                                <span class="sparkle">✨</span>
+                            </span>
+                        </span>
+                        <span class="button-shine"></span>
+                        <span class="button-shadow"></span>
+                    </button>
+                    <span id="spinButtonDescription" class="visually-hidden">
+                        Pressione para girar os rolos e tentar ganhar
+                    </span>
+                </div>
+                
+                <!-- Display de Créditos -->
+                <div class="credits-display candy-box" role="status" aria-live="polite" aria-atomic="true">
+                    <div class="display-background"></div>
+                    <div class="display-content">
+                        <span class="label credits-label" id="creditsLabel" data-pt="Créditos:" data-en="Credits:">Créditos:</span>
+                        <span class="value credits-value" id="creditsValue">100</span>
+                        <span class="candy-icon" aria-hidden="true">🍬</span>
+                    </div>
+                    <div class="display-glow"></div>
+                </div>
+                
+                <!-- Controles de Aposta -->
+                <div class="bet-controls sweet-panel" role="group" aria-labelledby="betLabel">
+                    <div class="panel-background"></div>
+                    <div class="panel-content">
+                        <span class="label bet-label" id="betLabel" data-pt="Aposta:" data-en="Bet:">Aposta:</span>
+                        <button class="bet-button decrease candy-button" 
+                                id="betDecrease" 
+                                type="button"
+                                aria-label="Diminuir aposta"
+                                aria-describedby="betValue">
+                            <span class="button-icon">-</span>
+                        </button>
+                        <span class="value bet-value" id="betValue" role="status" aria-live="polite">1</span>
+                        <button class="bet-button increase candy-button" 
+                                id="betIncrease" 
+                                type="button"
+                                aria-label="Aumentar aposta"
+                                aria-describedby="betValue">
+                            <span class="button-icon">+</span>
+                        </button>
+                    </div>
+                    <div class="panel-glow"></div>
+                </div>
+            </section>
+            
+            <!-- Display de Mensagens -->
+            <section class="message-display bubble-message" id="messageDisplay" role="status" aria-live="polite" aria-atomic="true">
+                <div class="message-background"></div>
+                <div class="message-decorations" aria-hidden="true">
+                    <span class="message-star message-star-1">🌟</span>
+                    <span class="message-star message-star-2">🌟</span>
+                    <span class="message-star message-star-3">🌟</span>
+                </div>
+                <div class="message-content">
+                    <!-- Mensagem de Boas-vindas -->
+                    <p class="message message-welcome active" data-type="welcome" id="welcomeMessage">
+                        <span class="message-text" data-pt="Bem-vindo! Pressione GIRAR para começar" data-en="Welcome! Press SPIN to start">
+                            Bem-vindo! Pressione GIRAR para começar
+                        </span>
+                    </p>
+                    
+                    <!-- Mensagem de Girando -->
+                    <p class="message message-spinning" data-type="spinning" id="spinningMessage" style="display: none;">
+                        <span class="message-text" data-pt="Girando..." data-en="Spinning...">Girando...</span>
+                        <span class="spinning-dots">
+                            <span class="dot dot-1">.</span>
+                            <span class="dot dot-2">.</span>
+                            <span class="dot dot-3">.</span>
+                        </span>
+                    </p>
+                    
+                    <!-- Mensagem de Vitória -->
+                    <p class="message message-win" data-type="win" id="winMessage" style="display: none;">
+                        <span class="message-text" data-pt="Você ganhou!" data-en="You won!">Você ganhou!</span>
+                        <span class="win-amount">
+                            <span class="win-prefix">+</span>
+                            <span class="win-value" id="winAmount">0</span>
+                        </span>
+                    </p>
+                    
+                    <!-- Mensagem de Derrota -->
+                    <p class="message message-lose" data-type="lose" id="loseMessage" style="display: none;">
+                        <span class="message-text" data-pt="Tente novamente!" data-en="Try again!">Tente novamente!</span>
+                        <span class="message-emoji">😊</span>
+                    </p>
+                    
+                    <!-- Mensagem de Jackpot -->
+                    <p class="message message-jackpot" data-type="jackpot" id="jackpotMessage" style="display: none;">
+                        <span class="jackpot-icons">
+                            <span class="jackpot-icon">🎉</span>
+                            <span class="jackpot-text">JACKPOT!</span>
+                            <span class="jackpot-icon">🎉</span>
+                        </span>
+                    </p>
+                    
+                    <!-- Mensagem de Sem Créditos -->
+                    <p class="message message-no-credits" data-type="no-credits" id="noCreditsMessage" style="display: none;">
+                        <span class="message-text" data-pt="Sem créditos!" data-en="No credits!">Sem créditos!</span>
+                        <span class="message-emoji">😢</span>
+                    </p>
+                </div>
+                <div class="message-bubble-tail" aria-hidden="true"></div>
+            </section>
+            
+            <!-- Informações do Jogo -->
+            <section class="game-info" id="gameInfo">
+                <button class="info-toggle cotton-candy-button" 
+                        id="infoToggle" 
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="infoContent">
+                    <span class="button-icon">ℹ️</span>
+                    <span class="button-text" id="infoButtonText" data-pt="Como Jogar" data-en="How to Play">Como Jogar</span>
+                </button>
+                
+                <div class="info-content sweet-content" id="infoContent" role="region" aria-label="Informações do jogo" hidden>
+                    <!-- Como Jogar -->
+                    <div class="info-section how-to-play">
+                        <h3 class="info-title rainbow-text" id="howToPlayTitle" data-pt="Como Jogar" data-en="How to Play">Como Jogar</h3>
+                        <div class="instructions">
+                            <div class="instruction-item">
+                                <span class="step-number">1</span>
+                                <span class="step-icon">💰</span>
+                                <span class="step-text" id="instruction1" data-pt="Escolha sua aposta usando os botões + e -" data-en="Choose your bet using the + and - buttons">
+                                    Escolha sua aposta usando os botões + e -
+                                </span>
+                            </div>
+                            
+                            <div class="instruction-item">
+                                <span class="step-number">2</span>
+                                <span class="step-icon">🎰</span>
+                                <span class="step-text" id="instruction2" data-pt="Clique em GIRAR para começar" data-en="Click SPIN to start">
+                                    Clique em GIRAR para começar
+                                </span>
+                            </div>
+                            
+                            <div class="instruction-item">
+                                <span class="step-number">3</span>
+                                <span class="step-icon">🎉</span>
+                                <span class="step-text" id="instruction3" data-pt="Ganhe combinando símbolos iguais!" data-en="Win by matching symbols!">
+                                    Ganhe combinando símbolos iguais!
+                                </span>
+                            </div>
+                            
+                            <div class="instruction-item special-instruction">
+                                <span class="special-combo">
+                                    <span class="combo-icon">🎡</span>
+                                    <span class="combo-icon">🎡</span>
+                                    <span class="combo-icon">🎡</span>
+                                </span>
+                                <span class="special-text">= SUPER JACKPOT!</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tabela de Prêmios -->
+                    <div class="info-section paytable">
+                        <h3 class="info-title rainbow-text" id="prizesTitle" data-pt="Prêmios" data-en="Prizes">Prêmios</h3>
+                        <ul class="paytable-list" role="list">
+                            <li class="pay-item pay-item-regular">
+                                <span class="pay-icon">💎</span>
+                                <span class="pay-text" id="prize1" data-pt="3 símbolos iguais = 10x aposta" data-en="3 matching symbols = 10x bet">
+                                    3 símbolos iguais = 10x aposta
+                                </span>
+                            </li>
+                            
+                            <li class="pay-item pay-item-medium">
+                                <span class="pay-icon">🏆</span>
+                                <span class="pay-text" id="prize2" data-pt="2 símbolos iguais = 5x aposta" data-en="2 matching symbols = 5x bet">
+                                    2 símbolos iguais = 5x aposta
+                                </span>
+                            </li>
+                            
+                            <li class="pay-item pay-item-special">
+                                <span class="pay-combo">
+                                    <span class="combo-icon">🎡</span>
+                                    <span class="combo-icon">🎡</span>
+                                    <span class="combo-icon">🎡</span>
+                                </span>
+                                <span class="pay-equals">=</span>
+                                <span class="pay-reward">JACKPOT (50x)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Símbolos do Jogo -->
+                    <div class="info-section symbols-guide">
+                        <h3 class="info-title rainbow-text" id="symbolsTitle" data-pt="Símbolos do Jogo" data-en="Game Symbols">Símbolos do Jogo</h3>
+                        <div class="symbol-grid" role="list">
+                            <!-- Roda-gigante -->
+                            <div class="symbol-item sweet-item" role="listitem">
+                                <div class="symbol-icon-container">
+                                    <span class="symbol-icon">🎡</span>
+                                    <span class="symbol-sparkle">✨</span>
+                                </div>
+                                <span class="symbol-name" data-pt="Roda-gigante" data-en="Ferris Wheel">Roda-gigante</span>
+                            </div>
+                            
+                            <!-- Montanha-russa -->
+                            <div class="symbol-item sweet-item" role="listitem">
+                                <div class="symbol-icon-container">
+                                    <span class="symbol-icon">🎢</span>
+                                    <span class="symbol-sparkle">✨</span>
+                                </div>
+                                <span class="symbol-name" data-pt="Montanha-russa" data-en="Roller Coaster">Montanha-russa</span>
+                            </div>
+                            
+                            <!-- Carrossel -->
+                            <div class="symbol-item sweet-item" role="listitem">
+                                <div class="symbol-icon-container">
+                                    <span class="symbol-icon">🎠</span>
+                                    <span class="symbol-sparkle">✨</span>
+                                </div>
+                                <span class="symbol-name" data-pt="Carrossel" data-en="Carousel">Carrossel</span>
+                            </div>
+                            
+                            <!-- Pirulito -->
+                            <div class="symbol-item sweet-item" role="listitem">
+                                <div class="symbol-icon-container">
+                                    <span class="symbol-icon">🍭</span>
+                                    <span class="symbol-sparkle">✨</span>
+                                </div>
+                                <span class="symbol-name" data-pt="Pirulito" data-en="Lollipop">Pirulito</span>
+                            </div>
+                            
+                            <!-- Pipoca -->
+                            <div class="symbol-item sweet-item" role="listitem">
+                                <div class="symbol-icon-container">
+                                    <span class="symbol-icon">🍿</span>
+                                    <span class="symbol-sparkle">✨</span>
+                                </div>
+                                <span class="symbol-name" data-pt="Pipoca" data-en="Popcorn">Pipoca</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Rodapé -->
+        <footer class="footer main-footer" id="mainFooter" role="contentinfo">
+            <!-- Container do Desenvolvedor -->
+            <div class="developer-container">
+                <div class="developer-logo-wrapper">
+                    <div class="developer-logo magical-logo">
+                        <!-- Efeitos de Fundo -->
+                        <div class="logo-background-effects" aria-hidden="true">
+                            <div class="logo-glow logo-glow-1"></div>
+                            <div class="logo-glow logo-glow-2"></div>
+                            <div class="logo-glow logo-glow-3"></div>
+                            <div class="logo-shine"></div>
+                        </div>
+                        
+                        <!-- Conteúdo do Logo -->
+                        <div class="logo-content">
+                            <span class="developed-by" id="developedBy" data-pt="Desenvolvido por" data-en="Developed by">
+                                Desenvolvido por
+                            </span>
+                            
+                            <!-- Nome do Desenvolvedor Super Estilizado -->
+                            <div class="developer-name fancy-name">
+                                <!-- Thiago -->
+                                <span class="name-part name-first">
+                                    <span class="name-letter name-t">T</span>
+                                    <span class="name-letter name-h">h</span>
+                                    <span class="name-letter name-i">i</span>
+                                    <span class="name-letter name-a">a</span>
+                                    <span class="name-letter name-g">g</span>
+                                    <span class="name-letter name-o">o</span>
+                                </span>
+                                
+                                <span class="name-space"> </span>
+                                
+                                <!-- Freitas -->
+                                <span class="name-part name-last">
+                                    <span class="name-letter name-f">F</span>
+                                    <span class="name-letter name-r">r</span>
+                                    <span class="name-letter name-e">e</span>
+                                    <span class="name-letter name-i2">i</span>
+                                    <span class="name-letter name-t2">t</span>
+                                    <span class="name-letter name-a2">a</span>
+                                    <span class="name-letter name-s">s</span>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Decoração do Logo -->
+                        <div class="logo-decoration" aria-hidden="true">
+                            <span class="logo-candy logo-candy-1">🍭</span>
+                            <span class="logo-candy logo-candy-2">🍬</span>
+                            <span class="logo-candy logo-candy-3">🧁</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Disclaimer -->
+            <p class="disclaimer magical-text" id="disclaimer">
+                <span class="disclaimer-text" data-pt="Jogo virtual sem valor monetário" data-en="Virtual game with no monetary value">
+                    Jogo virtual sem valor monetário
+                </span>
+            </p>
+            
+            <!-- Links do Rodapé -->
+            <nav class="footer-links" aria-label="Links do rodapé">
+                <a href="#" class="footer-link" data-pt="Política de Privacidade" data-en="Privacy Policy">Política de Privacidade</a>
+                <span class="link-separator">•</span>
+                <a href="#" class="footer-link" data-pt="Termos de Uso" data-en="Terms of Use">Termos de Uso</a>
+                <span class="link-separator">•</span>
+                <a href="#" class="footer-link" data-pt="Contato" data-en="Contact">Contato</a>
+            </nav>
+            
+            <!-- Copyright -->
+            <p class="copyright">
+                <span>&copy; 2025 Thiago Freitas.</span>
+                <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">
+                    Todos os direitos reservados.
+                </span>
+            </p>
+        </footer>
+    </div>
+    
+    <!-- Botão de Som Flutuante -->
+    <button class="sound-toggle candy-circle" 
+            id="soundToggle" 
+            type="button"
+            aria-label="Alternar som"
+            aria-pressed="true">
+        <span class="sound-icon sound-on" aria-hidden="true">🔊</span>
+        <span class="sound-icon sound-off" aria-hidden="true" style="display: none;">🔇</span>
+        <span class="sound-waves" aria-hidden="true">
+            <span class="wave wave-1"></span>
+            <span class="wave wave-2"></span>
+            <span class="wave wave-3"></span>
+        </span>
+    </button>
+    
+    <!-- Botão de Configurações Flutuante -->
+    <button class="settings-toggle candy-circle" 
+            id="settingsToggle" 
+            type="button"
+            aria-label="Configurações"
+            aria-expanded="false"
+            aria-controls="settingsPanel">
+        <span class="settings-icon" aria-hidden="true">⚙️</span>
+    </button>
+    
+    <!-- Painel de Configurações -->
+    <aside class="settings-panel" id="settingsPanel" role="dialog" aria-label="Configurações do jogo" hidden>
+        <div class="settings-header">
+            <h2 class="settings-title" data-pt="Configurações" data-en="Settings">Configurações</h2>
+            <button class="settings-close" 
+                    id="settingsClose" 
+                    type="button"
+                    aria-label="Fechar configurações">
+                <span aria-hidden="true">✖️</span>
+            </button>
+        </div>
+        
+        <div class="settings-content">
+            <!-- Configuração de Animações -->
+            <div class="setting-item">
+                <label class="setting-label" for="animationsToggle">
+                    <span class="label-text" data-pt="Animações" data-en="Animations">Animações</span>
+                </label>
+                <input type="checkbox" 
+                       id="animationsToggle" 
+                       class="setting-checkbox" 
+                       checked 
+                       aria-describedby="animationsDescription">
+                <span id="animationsDescription" class="visually-hidden">
+                    Ativar ou desativar animações do jogo
+                </span>
+            </div>
+            
+            <!-- Configuração de Partículas -->
+            <div class="setting-item">
+                <label class="setting-label" for="particlesToggle">
+                    <span class="label-text" data-pt="Efeitos de Partículas" data-en="Particle Effects">Efeitos de Partículas</span>
+                </label>
+                <input type="checkbox" 
+                       id="particlesToggle" 
+                       class="setting-checkbox" 
+                       checked 
+                       aria-describedby="particlesDescription">
+                <span id="particlesDescription" class="visually-hidden">
+                    Ativar ou desativar efeitos de partículas
+                </span>
+            </div>
+            
+            <!-- Configuração de Vibração -->
+            <div class="setting-item">
+                <label class="setting-label" for="vibrationToggle">
+                    <span class="label-text" data-pt="Vibração (Mobile)" data-en="Vibration (Mobile)">Vibração (Mobile)</span>
+                </label>
+                <input type="checkbox" 
+                       id="vibrationToggle" 
+                       class="setting-checkbox" 
+                       checked 
+                       aria-describedby="vibrationDescription">
+                <span id="vibrationDescription" class="visually-hidden">
+                    Ativar ou desativar vibração em dispositivos móveis
+                </span>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Container de Modais -->
+    <div class="modal-container" id="modalContainer" role="presentation" hidden></div>
+    
+    <!-- Overlay para Modais -->
+    <div class="modal-overlay" id="modalOverlay" role="presentation" hidden></div>
+    
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    
+    <!-- Script de Fallback para No-JS -->
+    <noscript>
+        <div class="no-js-message">
+            <h2>JavaScript Necessário</h2>
+            <p>Este jogo requer JavaScript para funcionar. Por favor, habilite o JavaScript em seu navegador.</p>
+        </div>
+    </noscript>
+</body>
+</html>
